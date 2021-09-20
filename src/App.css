@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+.header{
+  font-family:'Times New Roman', Times, serif;
+  font-size: larger;
+}
+.img{
+  display: flex;
+  justify-content: flex-end;
+  padding:10px;
+  margin: 5px;
+}
+.list{
+  display: grid;
+	justify-content: flex-start;
+	align-items: center;
+	position: static;
+}
