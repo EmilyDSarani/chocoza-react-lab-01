@@ -43,7 +43,7 @@ export default [
     {
     amount: '2',
     utensils: 'yolks',
-    goods: 'from eggs'
+    goods: 'eggs'
     },
     {
     amount: '1',
@@ -61,12 +61,4 @@ export default [
     goods: 'roughly chopped honey roasted pecans'
     },
     
-    
-    
-    
-    
-    
-       
-     
-
 ]

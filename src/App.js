@@ -5,6 +5,7 @@ import Recipe from './components/Recipe';
 import ImageSection from './components/ImageSection';
 import indregients from './data.js'; 
 import IngredientList from './components/IngredientList';
+import './App.css';
 
 export default class App extends React.Component {
   render() {

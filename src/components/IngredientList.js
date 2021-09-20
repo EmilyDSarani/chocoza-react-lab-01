@@ -3,11 +3,13 @@ import React from 'react'
 export default class IngredientList extends React.Component {
     render() {
         return (
-            <ol>
-            <ul>
+            <ul className = 'list'>
+                <li>
+                    {this.props.img}
                 {this.props.measure} {this.props.state} of {this.props.item}
+                </li>
             </ul>
-            </ol>
+            
         )
     }
 }
