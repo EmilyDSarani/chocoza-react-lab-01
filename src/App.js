@@ -1,26 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Recipe from './components/Recipe';
+import ImageSection from './components/ImageSection';
+import indregients from './data.js'; 
+import IngredientList from './components/IngredientList';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        
-        </a>
+export default class App extends React.Component {
+  render() {
+    return(
+      <>
+      <header>
+      <Header/>
       </header>
-    </div>
-  );
-}
 
-export default App;
+      <div>
+        <ImageSection />
+        <Recipe />
+      </div>
+      
+      {
+        indregients.map(ingredient =>
+          <IngredientList 
+          measure = {ingredient.amount}
+          state = {ingredient.utensils}
+          item = {ingredient.goods}
+          />)
+      }
+
+        <footer>
+      <Footer/>
+        </footer>
+      </>
+    )
+  }
+}
