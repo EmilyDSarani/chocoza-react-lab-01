@@ -1,3 +1,6 @@
+*{
+  background-color: rgb(250, 243, 239);
+}
 .App {
   text-align: center;
 }
@@ -37,8 +40,10 @@
   }
 }
 .header{
+  padding-top: 20px;
   font-family:'Times New Roman', Times, serif;
-  font-size: larger;
+  font-size: large;
+  color:seagreen
 }
 .img{
   display: flex;
@@ -51,4 +56,29 @@
 	justify-content: flex-start;
 	align-items: center;
 	position: static;
+  color: rebeccapurple;
+  border-bottom:solid black 1px;
+}
+.head{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-top: double rgb(66, 116, 255) 10px;
+  text-align: center;
+  color:rgb(2, 107, 148)
+}
+.za{
+display: block;  
+margin-left: auto;  
+margin-right: auto;  
+padding-bottom: 10px; 
+}
+.recipe{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 15px;
+  color:rgb(121, 48, 54)
+}
+.footer{
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: red;
+font-size: x-small;
 }
